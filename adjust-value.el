@@ -1,3 +1,4 @@
+; This does not preserve leading zeroes.
 (defun adjust-matched-integer (count)
 	(replace-match
 		(number-to-string
@@ -23,16 +24,19 @@
 			(looking-at "[0-9]\{2\}\:[0-9]\{2\}\:[0-9]\{2\}")
 			(error "Cannot adjust times yet.")
 		)
+
 		; 1999-12-31
 		(
 			(looking-at "[0-9]\{4\}\-[0-9]\{2\}\-[0-9]\{2\}")
 			(error "Cannot adjust dates yet.")
 		)
+
 		; 64
 		(
 			(looking-at "-?[0-9]+")
 			(adjust-matched-integer count)
 		)
+
 		(
 			t
 			(error "Unknown value format at point.")
@@ -45,11 +49,15 @@
 ;
 
 (defun decrement-value-at-point ()
+	"Decrement the value below the cursor."
+
 	(interactive)
 	(adjust-value-at-point -1)
 )
 
 (defun increment-value-at-point ()
+	"Increment the value below the cursor."
+
 	(interactive)
 	(adjust-value-at-point 1)
 )
