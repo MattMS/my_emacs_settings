@@ -10,7 +10,11 @@
 )
 
 (defun adjust-value-at-point (count)
-	(skip-chars-backward "\-:0-9")
+	;(skip-chars-backward "\-:0-9")
+
+	; For simply adjusting integers.
+	(skip-chars-backward "0-9")
+	(skip-chars-backward "-")
 
 	; `looking-at` returns `t` if the value under point matches (saves match).
 	(cond
