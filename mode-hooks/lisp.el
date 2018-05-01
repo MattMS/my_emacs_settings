@@ -1,0 +1,7 @@
+(defun my-lisp-mode-hook ()
+	(electric-indent-mode -1)
+	(setq lisp-body-indent 4)
+	(setq lisp-indent-offset 4)
+)
+(add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)
+(add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
