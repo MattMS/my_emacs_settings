@@ -32,90 +32,21 @@
  )
 
 
-(require 'helm-config)
-(helm-mode 1)
-;
-; https://github.com/emacs-helm/helm/wiki/Fuzzy-matching
-(setq helm-apropos-fuzzy-match t)
-(setq helm-buffers-fuzzy-matching t)
-(setq helm-candidate-number-limit 64)
-(setq helm-completion-in-region-fuzzy-match t)
-(setq helm-M-x-fuzzy-match t)
-(setq helm-mode-fuzzy-match t)
-
-(global-ede-mode t)
-
-; Must come after the `custom-set-variables` block.
-(load-theme 'solarized-dark)
-;(load-theme 'solarized-light)
-
-; `-1` hides the toolbar.
-; Does not accept `f` or `nil`.
-(tool-bar-mode -1)
-
-
-(require 'evil)
-(evil-mode 1)
-
-
-(set-face-attribute
-	'default nil
-	:family "Ubuntu Mono"
-	:height 160
-)
-
-; `t` will display column number after line number in the mode-line.
-; Default is `f`.
-;
-; https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-line-or-column.html
-;
-(setq column-number-mode t)
-
-; The `q` stands for "quoted", as in the first argument is quoted.
-; https://www.gnu.org/software/emacs/manual/html_node/eintr/Using-setq.html
-(setq-default
-	indent-tabs-mode
-	t  ; default
-)
-
-; Avoid buffers (like help) opening a new window.
-; https://www.emacswiki.org/emacs/OneWindow
-(setq
-	pop-up-windows
-	nil
-)
-
-(setq
-	tab-width
-	4
-)
-
-;user-mail-address
-;"name@example.com"
-
-(setq
-	whitespace-style
-	'(
-		; `face` is required to visualise with faces.
-		face
-		indentation
-		indentation::space
-		indentation::tab
-		space-after-tab
-		space-before-tab
-		spaces
-		tabs
-		tab-mark
-		trailing
-	)
-)
-
-
 ; https://stackoverflow.com/questions/2079095/how-to-modularize-an-emacs-configuration
 (defun load-user-file (file)
 	(interactive "f")
 	(load-file (expand-file-name file user-emacs-directory))
 )
+
+(load-user-file "my/ede.el")
+(load-user-file "my/evil.el")
+(load-user-file "my/helm.el")
+
+(load-user-file "my/interface.el")
+(load-user-file "my/indent.el")
+(load-user-file "my/whitespace.el")
+
+;(setq user-mail-address "name@example.com")
 
 (load-user-file "adjust-value.el")
 (load-user-file "new-line.el")
@@ -126,3 +57,4 @@
 
 (load-user-file "mode-hooks/lisp.el")
 (load-user-file "mode-hooks/python.el")
+(load-user-file "mode-hooks/yaml.el")
