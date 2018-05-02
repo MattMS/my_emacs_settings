@@ -1,6 +1,3 @@
-; Automatically added after calling `M-x list-packages`.
-; https://www.emacswiki.org/emacs/InstallingPackages
-(package-initialize) 
 (require 'package)
 
 ; Use `(add-to-list 'package-archives '())` to add package sources.
@@ -8,6 +5,10 @@
 ; https://melpa.org/#/getting-started
 ;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
+; Automatically added after calling `M-x list-packages`.
+; https://www.emacswiki.org/emacs/InstallingPackages
+(package-initialize) 
 
 
 (custom-set-variables
