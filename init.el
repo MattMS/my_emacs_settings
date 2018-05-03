@@ -53,6 +53,7 @@
 
 (load-user-file "key-bindings/evil.el")
 (load-user-file "key-bindings/global.el")
+(load-user-file "key-bindings/helm.el")
 (load-user-file "key-bindings/leader.el")
 
 (load-user-file "mode-hooks/lisp.el")
