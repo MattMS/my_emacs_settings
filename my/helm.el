@@ -8,5 +8,9 @@
 (setq helm-candidate-number-limit 64)
 (setq helm-completion-in-region-fuzzy-match t)
 (setq helm-ff-skip-boring-files t)
+
+; `t` opens Helm covering the whole frame (rather than in other split).
+(setq helm-full-frame t)
+
 (setq helm-M-x-fuzzy-match t)
 (setq helm-mode-fuzzy-match t)
