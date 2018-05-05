@@ -45,6 +45,7 @@
 (load-user-file "my/evil.el")
 (load-user-file "my/helm.el")
 
+(load-user-file "my/files.el")
 (load-user-file "my/interface.el")
 (load-user-file "my/indent.el")
 (load-user-file "my/whitespace.el")
