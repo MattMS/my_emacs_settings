@@ -8,6 +8,7 @@
 			)
 		)
 	)
+	(backward-char 1)
 )
 
 (defun adjust-value-at-point (count)
