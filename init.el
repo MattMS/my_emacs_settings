@@ -38,6 +38,8 @@
 	(load-file (expand-file-name file user-emacs-directory))
 )
 
+(load-user-file "my/auto-complete.el")
+(load-user-file "my/dired.el")
 (load-user-file "my/ede.el")
 (load-user-file "my/evil.el")
 (load-user-file "my/helm.el")
