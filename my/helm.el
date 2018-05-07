@@ -1,4 +1,5 @@
-(require 'helm-config)
+; Do not need to require when using `package-initialize`.
+;(require 'helm-config)
 
 (helm-mode 1)
 
