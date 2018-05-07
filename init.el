@@ -22,7 +22,7 @@
 		  ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(package-selected-packages
 	  (quote
-		  (auto-complete evil helm helm-ebdb solarized-theme yaml-mode)))
+		  (auto-complete evil evil-surround helm helm-projectile helm-ebdb projectile solarized-theme yaml-mode)))
  '(tab-width 4))
 
 (custom-set-faces
@@ -42,8 +42,12 @@
 (load-user-file "my/auto-complete.el")
 (load-user-file "my/dired.el")
 (load-user-file "my/ede.el")
+(load-user-file "my/projectile.el")
+
 (load-user-file "my/evil.el")
+(load-user-file "my/evil-surround.el")
 (load-user-file "my/helm.el")
+(load-user-file "my/helm-projectile.el")
 
 (load-user-file "my/files.el")
 (load-user-file "my/interface.el")
