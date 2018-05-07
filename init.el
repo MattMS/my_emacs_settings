@@ -50,8 +50,6 @@
 (load-user-file "my/indent.el")
 (load-user-file "my/whitespace.el")
 
-;(setq user-mail-address "name@example.com")
-
 (load-user-file "adjust-value.el")
 (load-user-file "new-line.el")
 
