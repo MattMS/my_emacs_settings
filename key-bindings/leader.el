@@ -8,6 +8,8 @@
 ; Without Helm, use `dired-at-point`.
 (define-key my-leader-map "e" 'helm-find-files)
 
+(define-key my-leader-map "E" 'helm-projectile-find-file)
+
 ; Without Helm, use `list-buffers`.
 (define-key my-leader-map "f" 'helm-buffers-list)
 
