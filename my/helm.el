@@ -15,3 +15,7 @@
 
 (setq helm-M-x-fuzzy-match t)
 (setq helm-mode-fuzzy-match t)
+
+;(defun my-helm-mode-hook ()
+;)
+;(add-hook 'helm-mode-hook 'my-helm-mode-hook)
