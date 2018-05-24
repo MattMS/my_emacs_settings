@@ -1,3 +1,7 @@
+; Found at https://stackoverflow.com/questions/335487/programmatically-setting-emacs-frame-size
+(add-to-list 'default-frame-alist '(left . 0))
+(add-to-list 'default-frame-alist '(top . 0))
+
 ; Must come after the `custom-set-variables` block.
 (load-theme 'solarized-dark)
 ;(load-theme 'solarized-light)
