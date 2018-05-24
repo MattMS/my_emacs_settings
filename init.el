@@ -32,6 +32,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+; From http://ergoemacs.org/emacs/emacs_encoding_decoding_faq.html
+(set-language-environment "UTF-8")
+
 
 ; https://stackoverflow.com/questions/2079095/how-to-modularize-an-emacs-configuration
 (defun load-user-file (file)
