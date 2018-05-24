@@ -32,6 +32,8 @@
  ;; If there is more than one, they won't work right.
  )
 
+(put 'dired-find-alternate-file 'disabled nil)
+
 ; From http://ergoemacs.org/emacs/emacs_encoding_decoding_faq.html
 (set-language-environment "UTF-8")
 
