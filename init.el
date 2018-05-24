@@ -3,8 +3,8 @@
 ; Use `(add-to-list 'package-archives '())` to add package sources.
 ; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")))
 ; https://melpa.org/#/getting-started
-;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ; Automatically added after calling `M-x list-packages`.
 ; https://www.emacswiki.org/emacs/InstallingPackages
