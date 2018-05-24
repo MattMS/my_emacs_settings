@@ -13,6 +13,10 @@
 ; Without Helm, use `list-buffers`.
 (define-key my-leader-map "f" 'helm-buffers-list)
 
+(define-key my-leader-map "l" 'avy-goto-line)
+
+(define-key my-leader-map "L" 'avy-goto-char)
+
 (define-key my-leader-map "n" 'evil-next-buffer)
 
 (define-key my-leader-map "p" 'evil-prev-buffer)
