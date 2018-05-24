@@ -55,6 +55,7 @@
 ;(load-user-file "my/ede.el")
 (load-user-file "my/eww.el")
 (load-user-file "my/glasses.el")
+(load-user-file "my/ibuffer.el")
 (load-user-file "my/js.el")
 (load-user-file "my/projectile.el")
 
