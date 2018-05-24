@@ -38,6 +38,7 @@
 
 ; https://stackoverflow.com/questions/2079095/how-to-modularize-an-emacs-configuration
 (defun load-user-file (file)
+	; `f` argument indicates this function expects an existing file.
 	(interactive "f")
 	(load-file (expand-file-name file user-emacs-directory))
 )
