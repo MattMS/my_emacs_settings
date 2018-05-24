@@ -22,6 +22,10 @@ Using `/D` to specify the link is to a directory.
 
 ## Packages
 
+### Magit
+
+- [Installing from Elpa](https://magit.vc/manual/magit/Installing-from-an-Elpa-Archive.html#Installing-from-an-Elpa-Archive)
+
 ### Ranger
 
 - Melpa: ranger
