@@ -18,3 +18,11 @@ Create a symbolic-link at the default Emacs init location:
 	mklink /D C:\Users\matt\AppData\Roaming\.emacs.d C:\Users\matt\settings\emacs
 
 Using `/D` to specify the link is to a directory.
+
+
+## Packages
+
+### Ranger
+
+- Melpa: ranger
+- [GitHub](https://github.com/ralesi/ranger.el)
