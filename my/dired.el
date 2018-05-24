@@ -1,3 +1,7 @@
+; Allows use of `dired-jump` from files.
+; From http://ergoemacs.org/emacs/emacs_dired_tips.html
+(require 'dired-x)
+
 (defun my-dired-visit-parent-folder ()
 	(interactive)
 	(find-alternate-file "..")
