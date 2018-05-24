@@ -5,6 +5,12 @@
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 
+; Refresh buffers when files change.
+;
+; [How to have Emacs auto-refresh all buffers when files have changed on disk? @ Stack Overflow](https://stackoverflow.com/questions/1480572/how-to-have-emacs-auto-refresh-all-buffers-when-files-have-changed-on-disk)
+;
+;(global-auto-revert-mode t)
+
 ; Function that is meant to save backups in dated folders.
 ; Seems like it would have trouble with same named files modified on the same day.
 ;
