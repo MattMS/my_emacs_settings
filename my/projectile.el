@@ -8,8 +8,14 @@
 ;
 ; ---
 
-(projectile-mode)
-
 ;(setq projectile-keymap-prefix (kbd "C-c C-p"))
 
+(setq projectile-mode-line " Projectile")
+
+;(setq projectile-use-native-indexing nil)
+
 ;(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+
+;(projectile-mode)
+
+(projectile-global-mode 1)
