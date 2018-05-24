@@ -5,12 +5,22 @@
 
 (define-key my-leader-map "d" 'kill-this-buffer)
 
-; Without Helm, use `dired-at-point`.
-(define-key my-leader-map "e" 'helm-find-files)
+; Open file explorer.
+;
+; - Default Emacs: `dired-at-point`.
+; - Helm: `helm-find-files`.
+; - Ranger (minimal): `deer`.
+;
+; In Ranger, use `f` to create a new file (or find existing).
+;
+(define-key my-leader-map "e" 'ranger)
 
 (define-key my-leader-map "E" 'helm-projectile-find-file)
 
-; Without Helm, use `list-buffers`.
+; Open buffer switcher.
+;
+; - Default Emacs: `list-buffers`.
+;
 (define-key my-leader-map "f" 'helm-buffers-list)
 
 (define-key my-leader-map "F" 'ibuffer)
