@@ -25,7 +25,7 @@
 
 ;(eval-after-load 'company '(progn))
 (with-eval-after-load 'company
-	(company-flx-mode 1)
+	;(company-flx-mode 1)
 
 	(setq company-idle-delay 0.5)
 
