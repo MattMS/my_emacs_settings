@@ -5,15 +5,24 @@
 
 (define-key my-leader-map "d" 'kill-this-buffer)
 
-; Open file explorer.
+; Delete the current frame.
+;
+(define-key my-leader-map "D" 'delete-frame)
+
+; Search for file in folder.
 ;
 ; - Default Emacs: `dired-at-point`.
 ; - Helm: `helm-find-files`.
+; - Ranger (full): `ranger`.
 ; - Ranger (minimal): `deer`.
 ;
-; In Ranger, use `f` to create a new file (or find existing).
+; In Helm, can just type the file name to create it.
 ;
-(define-key my-leader-map "e" 'ranger)
+; In Ranger, use `f` to create a new file (or find existing).
+; `; +` to create a folder.
+; `C-p` to switch to Dired.
+;
+(define-key my-leader-map "e" 'helm-find-files)
 
 (define-key my-leader-map "E" 'helm-projectile-find-file)
 
