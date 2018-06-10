@@ -37,6 +37,12 @@
 ; From http://ergoemacs.org/emacs/emacs_encoding_decoding_faq.html
 (set-language-environment "UTF-8")
 
+; Disable audio bell.
+;
+; From https://www.emacswiki.org/emacs/AlarmBell
+;
+(setq ring-bell-function 'ignore)
+
 
 ; https://stackoverflow.com/questions/2079095/how-to-modularize-an-emacs-configuration
 (defun load-user-file (file)
