@@ -64,6 +64,7 @@
 (load-user-file "my/ibuffer.el")
 (load-user-file "my/js.el")
 (load-user-file "my/projectile.el")
+(load-user-file "my/ranger.el")
 
 (load-user-file "my/evil.el")
 (load-user-file "my/evil-surround.el")
