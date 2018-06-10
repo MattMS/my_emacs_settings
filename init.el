@@ -68,6 +68,7 @@
 (load-user-file "my/evil.el")
 (load-user-file "my/evil-surround.el")
 (load-user-file "my/helm.el")
+(load-user-file "my/helm-bookmark.el")
 (load-user-file "my/helm-projectile.el")
 
 (load-user-file "my/files.el")
