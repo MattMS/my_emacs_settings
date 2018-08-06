@@ -27,7 +27,9 @@
 (with-eval-after-load 'company
 	;(company-flx-mode 1)
 
-	(setq company-idle-delay 0.5)
+	(setq company-dabbrev-downcase nil)
+
+	(setq company-idle-delay 0.2)
 
 	(add-to-list 'company-backends '(company-capf company-dabbrev))
 
