@@ -49,16 +49,16 @@
 ; Functions for key-binding.
 ;
 
-(defun decrement-value-at-point ()
+(defun decrement-value-at-point (count)
 	"Decrement the value below the cursor."
 
-	(interactive)
-	(adjust-value-at-point -1)
+	(interactive "p")
+	(adjust-value-at-point (* -1 count))
 )
 
-(defun increment-value-at-point ()
+(defun increment-value-at-point (count)
 	"Increment the value below the cursor."
 
-	(interactive)
-	(adjust-value-at-point 1)
+	(interactive "p")
+	(adjust-value-at-point count)
 )
