@@ -97,3 +97,5 @@
 (load-user-file "mode-hooks/lisp.el")
 (load-user-file "mode-hooks/python.el")
 (load-user-file "mode-hooks/yaml.el")
+
+(server-start)
