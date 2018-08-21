@@ -37,6 +37,12 @@
 ; From http://ergoemacs.org/emacs/emacs_encoding_decoding_faq.html
 (set-language-environment "UTF-8")
 
+; Default on Windows is `'prefer-utf-8-dos`.
+;
+; From https://stackoverflow.com/questions/9760290/emacs-change-default-line-ending
+;
+(setq-default buffer-file-coding-system 'prefer-utf-8-unix)
+
 ; Disable audio bell.
 ;
 ; From https://www.emacswiki.org/emacs/AlarmBell
