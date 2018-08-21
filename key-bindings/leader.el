@@ -38,9 +38,13 @@ Repeated invocations toggle between the two most recently open buffers."
 
 ; Open buffer switcher.
 ;
-; - Default Emacs: `list-buffers`.
+; Use Projectile to limit buffers to current project.
 ;
-(define-key my-leader-map "f" 'helm-buffers-list)
+; - Default Emacs: `list-buffers`.
+; - Helm: `helm-buffers-list`.
+; - Helm + Projectile: `helm-projectile-switch-to-buffer`.
+;
+(define-key my-leader-map "f" 'helm-projectile-switch-to-buffer)
 
 ; Open buffer manager.
 ;
