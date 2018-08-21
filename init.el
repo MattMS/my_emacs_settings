@@ -62,15 +62,18 @@
 (load-user-file "new-line.el")
 
 ;(load-user-file "my/auto-complete.el")
+(load-user-file "my/coffee.el")
 (load-user-file "my/company.el")
 (load-user-file "my/dired.el")
 ;(load-user-file "my/ede.el")
 (load-user-file "my/eww.el")
+(load-user-file "my/go.el")
 (load-user-file "my/glasses.el")
 (load-user-file "my/ibuffer.el")
 (load-user-file "my/js.el")
 (load-user-file "my/projectile.el")
 (load-user-file "my/ranger.el")
+(load-user-file "my/time.el")
 
 (load-user-file "my/evil.el")
 (load-user-file "my/evil-surround.el")
