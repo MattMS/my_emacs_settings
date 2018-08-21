@@ -6,6 +6,9 @@
 ;
 (helm-mode 1)
 
+; https://github.com/PythonNut/helm-flx
+(helm-flx-mode 1)
+
 (setq helm-candidate-number-limit 64)
 
 ; `t` opens Helm covering the whole frame (rather than in other split).
@@ -20,6 +23,10 @@
 ;
 ; non-`nil` skips files in `helm-boring-file-regexp-list`.
 (setq helm-ff-skip-boring-files t)
+;
+(setq helm-flx-for-helm-find-files t)
+;
+(setq helm-flx-for-helm-locate t)
 ;
 ; non-`nil` enables fuzzy-matching in `helm-M-x`
 (setq helm-M-x-fuzzy-match t)
