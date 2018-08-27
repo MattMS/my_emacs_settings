@@ -1,4 +1,5 @@
 ; Need to run `(glasses-mode)` in mode-hooks.
+; If it is run here, then the separator settings will not apply correctly.
 
 ; Control if original separators are replaced.
 ;
