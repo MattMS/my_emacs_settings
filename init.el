@@ -17,12 +17,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (solarized-dark)))
- '(custom-safe-themes
-	  (quote
-		  ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(package-selected-packages
-	  (quote
-		  (avy coffee-mode company company-flx evil evil-surround flx go-mode helm helm-ebdb helm-flx helm-projectile literate-coffee-mode magit markdown-mode perspective projectile ranger rg ripgrep solarized-theme yaml-mode)))
+	'(custom-safe-themes
+		 (quote
+			 ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+	'(package-selected-packages
+		 (quote
+			 (avy coffee-mode company company-flx evil evil-surround flx go-mode helm helm-ebdb helm-flx helm-projectile literate-coffee-mode magit markdown-mode perspective projectile pug-mode ranger rg ripgrep solarized-theme yaml-mode)))
  '(tab-width 4))
 
 (custom-set-faces
