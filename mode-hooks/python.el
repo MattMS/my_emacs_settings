@@ -1,5 +1,7 @@
 (defun my-python-mode-hook ()
 	(glasses-mode)
+	(setq glasses-original-separator "")
+	(setq glasses-separator "–")
 
 	; https://emacs.stackexchange.com/questions/9583/how-to-treat-underscore-as-part-of-the-word
 	(modify-syntax-entry ?_ "w")
