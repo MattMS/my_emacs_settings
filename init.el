@@ -32,6 +32,15 @@
  ;; If there is more than one, they won't work right.
  )
 
+; Disable the super-slow-loading `view-hello-file`.
+;
+; https://emacs.stackexchange.com/questions/12383/how-to-unbind-a-key
+;
+(global-unset-key (kbd "C-h h"))
+
+; https://emacs.stackexchange.com/questions/9583/how-to-treat-underscore-as-part-of-the-word
+(modify-syntax-entry ?_ "w")
+
 (put 'dired-find-alternate-file 'disabled nil)
 
 ; From http://ergoemacs.org/emacs/emacs_encoding_decoding_faq.html
